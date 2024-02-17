@@ -1,0 +1,13 @@
+server:
+  port: 8888
+#Pour afficher les configs tapez ces utls
+#http://localhost:8888/employee-service/main
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vidaNdecky/microservice-config.git
+  application:
+    name: CONFIG-SERVICE
+#Ce service ne va pas senregistre
